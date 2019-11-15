@@ -1626,7 +1626,22 @@ legend {
     white-space: nowrap;
 }
 
-.data-table {
+.data-table td {
     border-spacing: 5px;
+  }
+  
+  .bottom-data {
+    text-align: left;
+    border-top: 0 !important;
+    line-height: 35px !important;
+  }
+  .bottom-data > span::after {
+    content: "|";
+  }
+  .bottom-data .data-info::before {
+    content: " ";
+  }
+  .bottom-data .data-info::after {
+    content: " ";
   }
 /* End Data Table CSS */

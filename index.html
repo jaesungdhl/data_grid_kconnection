@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body class="d-flex justify-content-center">
-    <div class="table-wrapper">
+    <div class="table-wrapper d-none d-md-block">
         <table class="table data-table">
           <thead>
             <tr>
@@ -210,13 +210,166 @@
                 <td>
                   <span class="tooltipnew">
                     <i class="fas fa-mobile-alt" style="font-size:larger"></i>
-                    <span class="tooltiptext position-absolute">(123)456-7890</span>
+                    <span class="tooltiptext position-absolute">(123) 456-7890</span>
                   </span>
                 </td>
                 <td>Trivela</td>
             </tr>
           </tbody>
         </table>
+    </div>
+    <!-- Table Change Breakpoint -->
+    <div class="table-wrapper d-md-none">
+        <table class="table data-table">
+            <thead>
+              <tr>
+                  <th class="data-header">Pet (Breed)</th>
+                  <th class="data-header">Type (Gender)</th>
+                  <th class="data-header">In Time</th>
+                  <th class="data-header">Out Time</th>
+                  <th class="data-header">Alert</th>
+                  <th class="data-header">Confirmed</th>
+                  <th class="data-header">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="pet-name">Bowser</span>
+                  <span class="pet-breed">(Beagles)</span>
+                </td>
+                <td>
+                  Dog (<i class="fas fa-mars"></i>)
+                </td>
+                <td>
+                  <span class="in-date in-out-date-time-info">9:30PM</span>
+                </td>
+                <td>
+                  <span class="in-date in-out-date-time-info">10:30PM</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fa fa-user-alt" style="color:red;  font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">Bites</span>
+                  </span>
+                </td>
+                <td>
+                  <input type="checkbox" aria-label="Checkbox for following text input">
+                </td>
+                <td>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle text-dark pet-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu pet-action" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Check In</a>
+                      <a class="dropdown-item" href="/#/pets/details/@app.PetId">View Pet</a>
+                      <a class="dropdown-item" href="/#/clients/details/@app.ClientId">View Client</a>
+                      <a class="dropdown-item" href="@appointmentlink">View/Modify</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="bottom-data" colspan="7">
+                  <span class="phone">Phone:<span class="data-info">(123) 456-7890</span></span>
+                  <span class="address">Address:<span class="data-info">1843 Lowell Rd.</span></span>
+                  <span class="services">Services:<span class="data-info">Bath(Mike), Groom, Nails(Tim)</span></span>
+                  <span class="conf-no">Confirmation No:<span class="data-info">#1542</span></span>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                    <span class="pet-name">Bowser</span>
+                    <span class="pet-breed">(Beagles)</span>
+                  </td>
+                  <td>
+                    Dog (<i class="fas fa-mars"></i>)
+                  </td>
+                  <td>
+                    <span class="in-date in-out-date-time-info">9:30PM</span>
+                  </td>
+                  <td>
+                    <span class="in-date in-out-date-time-info">10:30PM</span>
+                  </td>
+                  <td>
+                    <span class="tooltipnew">
+                      <i class="fa fa-user-alt" style="color:red;  font-size:larger"></i>
+                      <span class="tooltiptext position-absolute">Bites</span>
+                    </span>
+                  </td>
+                  <td>
+                    <input type="checkbox" aria-label="Checkbox for following text input">
+                  </td>
+                  <td>
+                    <div class="dropdown">
+                      <a class="dropdown-toggle text-dark pet-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                      </a>
+                      <div class="dropdown-menu pet-action" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Check In</a>
+                        <a class="dropdown-item" href="/#/pets/details/@app.PetId">View Pet</a>
+                        <a class="dropdown-item" href="/#/clients/details/@app.ClientId">View Client</a>
+                        <a class="dropdown-item" href="@appointmentlink">View/Modify</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bottom-data" colspan="7">
+                    <span class="phone">Phone:<span class="data-info">(123) 456-7890</span></span>
+                    <span class="address">Address:<span class="data-info">1843 Lowell Rd.</span></span>
+                    <span class="services">Services:<span class="data-info">Bath(Mike), Groom, Nails(Tim)</span></span>
+                    <span class="conf-no">Confirmation No:<span class="data-info">#1542</span></span>
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                      <span class="pet-name">Bowser</span>
+                      <span class="pet-breed">(Beagles)</span>
+                    </td>
+                    <td>
+                      Dog (<i class="fas fa-mars"></i>)
+                    </td>
+                    <td>
+                      <span class="in-date in-out-date-time-info">9:30PM</span>
+                    </td>
+                    <td>
+                      <span class="in-date in-out-date-time-info">10:30PM</span>
+                    </td>
+                    <td>
+                      <span class="tooltipnew">
+                        <i class="fa fa-user-alt" style="color:red;  font-size:larger"></i>
+                        <span class="tooltiptext position-absolute">Bites</span>
+                      </span>
+                    </td>
+                    <td>
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </td>
+                    <td>
+                      <div class="dropdown">
+                        <a class="dropdown-toggle text-dark pet-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-ellipsis-h"></i>
+                        </a>
+                        <div class="dropdown-menu pet-action" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Check In</a>
+                          <a class="dropdown-item" href="/#/pets/details/@app.PetId">View Pet</a>
+                          <a class="dropdown-item" href="/#/clients/details/@app.ClientId">View Client</a>
+                          <a class="dropdown-item" href="@appointmentlink">View/Modify</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bottom-data" colspan="7">
+                      <span class="phone">Phone:<span class="data-info">(123) 456-7890</span></span>
+                      <span class="address">Address:<span class="data-info">1843 Lowell Rd.</span></span>
+                      <span class="services">Services:<span class="data-info">Bath(Mike), Groom, Nails(Tim)</span></span>
+                      <span class="conf-no">Confirmation No:<span class="data-info">#1542</span></span>
+                    </td>
+                  </tr>
+            </tbody>
+          </table>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
