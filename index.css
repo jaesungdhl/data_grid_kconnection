@@ -1,0 +1,1628 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+*{
+	outline: none !important;
+}
+a {
+    text-decoration: none !important;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #fff;
+	font-size: 15px;
+	color: #454545;
+	overflow-x: hidden
+}
+ul li{
+	list-style: none
+}
+/* Common CSS */
+a{
+	color: #061836;
+}
+.bg-theme {
+/*	background: #2F3E9E;*/
+	background: #3E8EF7;
+}
+.bg-theme-light{
+/*	background: #e5e8f7;*/
+	background: #eee;
+}
+.btn-primary{
+	background: #3E8EF7;
+}
+.btn-primary:hover{
+	background: #3E8EF7;
+}
+.btn-left-form {
+  line-height: 40px;
+  width: 49%;
+  padding: 0;
+  text-align: center
+}
+.btn-left-form:first-child{
+	margin-right: 2% !important;
+}
+
+@media (max-width: 991.98px) { 
+	body{
+		font-size: 14px
+	}
+	.md-px-2{
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
+fieldset {
+  min-width: 0;
+  padding: 4px 20px 8px;
+  border: solid 1px #3E8EF7;
+  margin-top: 18px;
+	border-radius: 7px;
+}
+legend {
+    width: auto;
+    padding: 0 8px;
+    font-size: 16px;
+}
+
+.category-menu{
+	width: 255px;
+	left: -255px;
+	background: #fff;
+	margin-top: 20px;
+	visibility: hidden;
+	z-index: 99;
+	background: #fff;
+	position: fixed;
+	-moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+.category-menu.active{
+	margin: 0;
+	left: 0;
+	visibility: visible;
+}
+/* Card section*/
+.card-header
+{
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-border{
+	border-top: solid 4px #3e8ef7;
+}
+
+.card .pull-left
+{
+	float: left !important;
+}
+
+.card .pull-right
+{
+	float: right !important;
+}
+
+/* tab custom css */
+.tab-header-design .nav-item
+{
+	font-size: 15px !important;
+	padding: .1rem .1rem !important;
+}
+.tab-header-design .nav-link
+{
+	padding-top:8px !important;
+	padding-bottom:8px !important;
+}
+.nav-link.active
+{
+	background-color:blue !important;
+	background-color: #3e8ef7 !important;
+    color: #ffffff !important;
+    font-weight: 500;
+	border-top: solid 2px #000000;
+	border-left: solid  2px  #000000;
+	border-right: solid  2px  #000000;
+	border-bottom: none;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef transparent #dee2e6;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	border-color: transparent
+}
+/* Navbar */
+
+.navbar {
+	padding: 0.5rem 1rem;
+}
+.navbar-title {
+    text-align: center !important;
+    align-content: center !important;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline
+}
+.dark .navbar-title,
+.blue .navbar-title {
+    color:white;   
+}
+@media(max-width: 600px) {
+    .navbar-title
+    {
+        display:none
+    }
+}
+.navbar .menu-font
+{
+    font-size: 15px;
+}
+.bg-theme .nav-link {
+	color: #fff !important;
+}
+.nav-user {
+	position: relative;
+}
+
+.user_dropdown {
+	position: absolute;
+	right: -7px;
+	top: 52px;
+	width: 300px;
+	border: none;
+}
+
+.user_dropdown_none{
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear 0.3s;
+    margin-top: 20px;
+}
+
+.user_dropdown_show{
+    visibility: visible;
+    opacity: 1;
+    transition: all linear 0.3s;
+    margin-top: 0;
+}
+@media(max-width:1199px)
+{
+    .user_dropdown_show {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.user_dropdown .card{
+	border: none;
+	border-radius: 0 !important;
+}
+.user_dropdown .card .btn{
+	border: solid 1px #bbb;
+}
+
+.user_dropdown .card-header {
+	background: #3E8EF7;
+	color: #fff;
+	border-radius: 0 !important;
+}
+.dropdown-menu .dropdown-item{
+	border-bottom: 1px solid #eee;
+	font-size: 15px
+}
+.dropdown-menu .dropdown-item:last-child{
+	border-bottom: none
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: #eee
+}
+
+
+
+
+/* Left Menubar */
+#sidebar {
+	background: #fff;
+}
+/* Search section*/
+#search i {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+	cursor: pointer;
+	font-size: 16px;
+	color: #454545
+}
+/* Accordion section*/
+#accordion{
+	overflow-y:scroll;
+	height: calc(100vh - 92px) !important;
+}
+@media(max-width: 768px)
+{
+
+}
+@media(max-width:414px)
+{
+    #accordion {
+        height: calc(100vh - 56px) !important;
+    }
+}
+@media(max-width:375px)
+{
+    #accordion {
+        height: calc(100vh - 57px) !important;
+    }
+}
+@media(max-width:320px)
+{
+    #accordion {
+        height: calc(100vh - 56px) !important;
+    }
+}
+.accordion-area{
+	margin: 7px 5px;
+	border: 1px solid rgba(62, 142, 247, 0.7);
+
+}
+#accordion .card, #accordion .card-header{
+	border: none;
+	margin:0;
+}
+#accordion .btn-link{
+	color: #454545;
+	text-decoration: none
+}
+.accordion-area .dropdown-menu{
+	position: relative !important;
+	transform: none !important;
+	border: none
+}
+.accordion-area .dropdown-menu .dropdown-item{
+	border: none
+}
+.accordion-area .dropdown-toggle::after{
+	display: none
+}
+.accordion-area .card-header [aria-expanded="true"] i {
+    /*transform: rotate(90deg)*/
+}
+.accordion-area .card-header .number{
+	font-size: 13px
+}
+.accordion-area .card-body .nav-item.dropdown{
+	display: table;
+	width: 100%
+}
+.accordion-area .name-title {
+    /*margin-left: 25px;*/
+    cursor: pointer;
+}
+.accordion-area .card-body li{
+	margin-left: 12px;
+	display: table
+}
+.accordion-area .card-body .dropdown-item {
+    font-size: 13px;
+    padding: 0 9px;
+    margin-top: -6px;
+}
+/*
+@media (max-width: 991.98px) { 
+	#sidebar {
+		display: none;
+	}
+}
+*/
+
+.user_dropdown_arrow{
+	width: 1px;
+    height: 1px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    right: 10px;
+    top: -21px;
+}
+#sidebar a {
+	padding: 10px 25px;
+	color: #333;
+	font-size: 16px;
+}
+.main-content{
+	width: 85%;
+	float: left;
+	padding-top: 70px;
+	background: #F3F6F9;
+}
+@media (max-width: 1100px) { 
+	.main-content{
+		width: 83%;
+	}
+}
+@media (max-width: 1100px) and (min-width: 992px) { 
+	#accordion h5{
+		font-size: 14px
+	}
+}
+@media (max-width: 991.98px) { 
+	.main-content{
+		width: 100%;
+	}
+    .card {
+        /*margin-top: 30px*/
+    }
+}
+@media (max-width: 567px) {
+    .card {
+        margin-top: 0px
+    }
+}
+
+#sidebar a i {
+	 margin-right: 15px;
+   font-size: 20px;
+   transform: translateY(1px);
+	 color: #707070;
+}
+
+/* Form */
+.form-control{
+	height: 40px;
+	padding: 3px 6px;
+	font-size: 15px;
+	border: 1px solid #bebebe;
+/*	border: 1px solid #bebebe !important;*/
+/*
+	width: 100% !important;
+	margin: 2px 0
+*/
+}
+.form-group label{
+	margin-bottom: 0.1rem !important;
+	font-size: 15px;
+}
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+
+/* According */
+.accordion .card {
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+.accordion>.card .card-header {
+    padding: 5px 8px;
+    background: #46494E;
+}
+.accordion>.card .btn-link {
+    font-weight: 700;
+    color: #fff;
+		text-align: left;
+    text-decoration: none;
+}
+.tab-content{
+	background: #fff;
+	padding: 0px;
+}
+
+/* custom table as grid */
+.custom-table th
+{
+	background-color:#c2daf9;
+	border-bottom: 2px solid #dee2e6 !important;
+}
+.custom-table, .custom-table th, .custom-table td
+{
+	border: solid 1px #dee2e6;
+	position: relative
+}
+.custom-table th,td
+{
+	font-size: 12px !important;
+    line-height: 40px !important;
+	padding: 0px !important;
+	text-align: center;
+}
+
+/*---- CHECKBOX -------*/
+.hide {
+    display: none;
+}
+.check_submit label::before {
+	position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 50%;
+    top: 11px;
+    border: 1px solid transparent;
+    transform: translateX(-50%);
+    border-color: #3E8EF7;
+    color: #fff;
+}
+.check_submit input[type="checkbox"]:checked + label::before {
+	font-size: 12px;
+    line-height: 19px;
+    position: absolute;
+    text-align: center;
+    content: "\f00c";
+    font-weight: 300;
+    font-family: "FontAwesome";
+	background-color: #3E8EF7;
+}
+.contact-list{
+	line-height: 40px;
+}
+.category-menu .card-header:first-child {
+    margin-bottom: 0 !important;
+    border-right: 1px solid rgba(0,0,0,.125);
+    background-color: rgb(230, 239, 251);
+}
+.category-menu .card-header {
+    padding: .4rem .55rem !important;
+}
+    .category-menu #accordion {
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+.client-explorer-unpin {
+    transform: rotate(90deg);
+    padding-top: 10px;
+    font-size: 13px;
+}
+.client-explorer-pin {
+    transform: rotate(0deg);
+    padding-top: 6px;
+    font-size: 13px;
+}
+#search .input-group-text {
+    padding: .375rem .5rem !important;
+}
+.input-cross-button {
+    position: fixed;
+    z-index: 555555;
+    margin-left: 195px;
+    margin-top: 10px;
+   
+}
+.client-explorer-header.card-header {
+    padding: .1rem 1.25rem .0rem .0rem !important;
+}
+.client-explorer-header.card-header a {
+    padding: 0px 0px 0px 8px;
+}
+.client-explorer-body {
+    font-size: 13px !important;
+}
+.client-explorer-body .text-block
+{
+   margin-bottom: 5px;
+}
+.client-explorer-body .pet-name {
+    font-size: 1rem;
+}
+.client-explorer-body .breed-name {
+    font-size: 12px;
+}
+.text-block .pet-icon {
+    margin-left: 25px !important;
+    font-size: 1rem !important;
+}
+.client-explorer-dropdown {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.client-explorer-dropdown .a-button {
+    width: 50px;
+    height: 20px;
+    border: 1px solid #999;
+    line-height: 17px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #fff;
+}
+    .client-explorer-dropdown .dropdown-menu {
+        margin-left: 100px;
+        min-width: 6rem !important;
+    }
+.hover-none:hover {
+    text-decoration: none !important;
+    color: #454545 !important;
+}
+.header-search {
+    padding-right: 7px !important;
+    padding-left: 5px !important;
+}
+#search .input-group > .form-control:not(:first-child) {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+/* non responsive class */
+@media (max-width: 768px) {
+    .non-responsive
+	{
+		display:none !important;
+	}
+    .category-menu.active {
+        border-right: 1px solid #3e8ef7;
+        background-color: #ccc;
+    }
+    #accordion::-webkit-scrollbar {
+        width: 5px;
+        background-color: #F5F5F5;
+    }
+
+    #accordion::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,1,221,.3);
+    }
+
+
+}
+@media (max-width: 767px) { 
+	.non-responive-padding
+	{
+		padding-top: 10px !important;
+	}
+}
+@media (min-width: 768px) { 
+	.non-responive-padding
+	{
+		padding-left: 0px !important;
+	}
+}
+
+.blue-thin-button
+{
+	height: 25px !important;
+    line-height: 25px !important;
+    padding: 0px 7px 0px 7px !important;
+    font-size: 14px !important;
+    margin: 0px !important;
+	margin: 2px !important;
+}
+.pd-all-10
+{
+	padding: 10px !important;
+}
+.white {
+    color: #ffffff !important;
+}
+.black {
+    color: #000000 !important;
+}
+.red
+{
+	color: #ff0000 !important;
+}
+.dark-red
+{
+	color: #bd1c1c  !important;
+}
+.green {
+    color: green !important;
+}
+.bg-green{
+    background-color:#54cc46;
+}
+.bg-red {
+    background-color: #ff0000;
+}
+/* Login Form */
+.login-body {
+    background: #f9f9f9;
+}
+.login-form{
+	margin-top: 120px;
+}
+.login-form .card-header{
+	background: #f9f9f9;
+}
+.field-wrap{
+	position: relative;
+}
+.field-wrap .form-control{
+	padding-left: 40px;
+}
+.field-icon{
+	  position: absolute;
+    left: 15px;
+    top: 13px;
+    color: #666;
+}
+
+.sidebar-loader{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+}
+.bg-gray {
+    background-color: rgba(230, 230, 230,0.5) !important;
+}
+
+.bg-blue {
+    background-color: rgb(230, 239, 251) !important;
+}
+
+.card-header:first-child {
+    /*background-color: rgb(230, 239, 251) !important;*/
+    margin-bottom: 5px !important;
+}
+.font-bold
+{
+    font-weight:bold !important;
+}
+/*Custom color*/
+.orange {
+    color: orangered !important;
+}
+/*end custom color*/
+/*Custom bg colors*/
+.bg-yellow {
+    background-color: #ffe969 !important;
+}
+/*End:  Custom bg colors*/
+.emoji-img-icon {
+    height: 20px !important;
+    margin-right: 2px !important;
+    vertical-align: top !important;
+}
+/*pet/client Card */
+.custom-card-header {
+    height: 40px !important;
+    padding: 6px 0px 0px 10px !important;
+}
+.card-list li {
+    line-height: 1.8;
+}
+.card-warning {
+    margin-bottom: 8px !important;
+}
+.card-top {
+    padding-bottom: 1.8rem !important;
+}
+
+.card-top-icon {
+    transform: translate(0px, 3px);
+    font-size: 24px;
+}
+
+.card-bottom {
+    padding-top: 14px;
+    border-top: solid 1px #ccc;
+    text-align: center;
+}
+
+    .card-bottom span {
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+.card-table td {
+    text-align: left;
+    font-size: inherit !important;
+    line-height: 1.8 !important;
+}
+@media only screen and (max-width: 767px) {
+    .media-carousel-box {
+        /*add this class on media div*/
+        flex-direction: column;
+    }
+
+    .pet-carousel {
+        width: 100%;
+    }
+
+        .pet-carousel .carousel-item img {
+            width: 100%;
+            height: 200px;
+        }
+
+    .media-carousel-box .media-body {
+        margin-top: 15px;
+    }
+
+        .media-carousel-box .media-body.border-right {
+            border-right: 0 none !important;
+        }
+
+    .vet-name-box {
+        /*add this class on col-md-6 div where this content belong div*/
+        padding-left: 1rem !important;
+        padding-bottom: 20px;
+    }
+}
+/* end: pet card */
+/* start: toggle*/
+.toggle.btn-primary {
+    border: 1px solid #357ebd;
+    background-color: #3E8EF7;
+}
+
+.toggle.btn-default {
+    border: 1px solid #ccc;
+    background-color: #e6e6e6;
+}
+
+.toggle-group {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-group > label {
+    background-color: none;
+    border: none;
+}
+
+.toggle-handle {
+    border: #ccc 1px solid;
+    background-color: white;
+}
+/* end: toggle*/
+/* start: groom*/
+.input-group-prepend {
+    justify-content: center;
+}
+
+.input-group-text {
+    justify-content: center;
+}
+
+@media(max-width:576px) {
+    .tab-edit {
+        padding: 0;
+    }
+}
+
+@media(max-width: 1275px) {
+    /* .checkbox-groom-label {
+        font-size: 0.8rem !important;
+    } */
+}
+
+@media(max-width: 1200px) {
+    .input-group-prepend, .input-group-append {
+        /*width: 30%;*/
+        width: 10%; /*Saiful modified on 9/9/2019*/
+    }
+    .input-group-text {
+        padding: 0;
+        width: 100%;
+    }
+    /* .dollar-input {
+        border-top-left-radius: 0.25rem !important;
+        border-bottom-left-radius: 0.25rem !important;
+    } */
+    .overflowing-title {
+        display: none;
+    }
+}
+
+@media(max-width: 1155px) {
+    /* .checkbox-groom-label {
+        font-size: 0.65rem !important;
+    } */
+
+    .groom-option {
+        width: 90% !important;
+    }
+}
+
+@media(max-width:991px){
+    /* .input-group-prepend {
+        display: flex;
+    }
+
+    .dollar-input {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    } */
+
+    .groom-option {
+        width: 100% !important;
+    }
+
+    .money-input {
+        width: 100% !important;
+    }
+
+    .edit-group-first{
+        margin-bottom:20px;
+    }
+    .overflowing-title {
+        display: inline-block !important;
+    }
+}
+
+@media(max-width: 720px) {
+    /* .checkbox-groom-label {
+        font-size: 0.8rem !important;
+    } */
+    /* .input-group-prepend {
+        display: none;
+    }
+    .dollar-input {
+        border-top-left-radius: 0.25rem !important;
+        border-bottom-left-radius: 0.25rem !important;
+    } */
+}
+
+@media(max-width: 585px) {
+    /* .checkbox-groom-label {
+        font-size: 0.7rem !important;
+    } */
+}
+
+@media(max-width: 540px) {
+    /* .checkbox-groom-label {
+        font-size: 0.65rem !important;
+    } */
+
+    .groom-option {
+        width: 90% !important;
+    }
+}
+
+@media(max-width: 410px) {
+    .checkbox-label {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media(max-width: 480px) {
+    .checkbox-label {
+        font-size: 0.65rem !important;
+    }
+    .groom-option {
+        width: 85% !important;
+    }
+    .groom-toggle-container {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+    .groom-price-container {
+        max-width: 33.33333%;
+        flex: 0 0 33.33333%;
+    }
+    .groom-dropdown-container {
+        max-width: 41.6667%;
+        flex: 0 0 41.6667%;
+    }
+} 
+
+@media(max-width: 360px) {
+    .checkbox-label {
+        font-size: 0.65rem !important;
+    }
+     .checkbox-groom-label {
+        font-size: 0.5rem !important;
+        margin-left: 0.3rem !important;
+    }
+}
+
+/* end: groom appointment*/
+/* start: boarding*/
+.action-btn-container {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.dropdown-container {
+    position: relative;
+    top: -5.5px;
+}
+
+.dropdown-menu.show {
+    left: -35px !important;
+}
+
+.pickup-delivery-note {
+    display: none;
+}
+
+.appointment-btns {
+    font-size: 0.75rem !important;
+}
+
+@media(max-width: 1150px) {
+    .emergency {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media(max-width:991px) {
+    .emergency {
+        font-size: 0.75rem !important;
+    }
+}
+
+@media(max-width: 767px) {
+    .media {
+        border-bottom: 1px solid #dee2e6 !important;
+    }
+}
+
+@media(max-width: 430px) {
+    .card-title {
+        font-size: 0.8rem !important;
+        margin: 0;
+    }
+
+    .special-note {
+        font-size: 0.55rem !important;
+    }
+
+    .boarding-option {
+        font-size: 0.8rem !important;
+    }
+
+    .print-btn {
+        transform: scale(0.8);
+    }
+
+    .appointment-btns {
+        font-size: 0.6rem !important;
+    }
+}
+
+@media(max-width: 390px) {
+    .boarding-option {
+        font-size: 0.5rem !important;
+        margin-right: 0 !important;
+        margin-left: 0.2rem !important;
+    }
+
+    .dropdown-container {
+        padding-right: 2rem !important;
+        margin-right: 0 !important;
+    }
+
+    .special-note-title {
+        font-size: 0.55rem !important;
+    }
+}
+/* end: boarding appointment*/
+
+/* Landing Page CSS */
+.expanded {
+    display: inline-block;
+}
+
+.collapsed {
+    display: none;
+}
+
+.pet-pic-link {
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.pet-pic {
+    min-width: 100%;
+    min-height: 200px;
+}
+
+.edit-btn {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.appointment {
+    box-shadow: 0 0 1rem rgba(0,0,0,.075) !important;
+}
+
+@media (max-width:768px) {
+    .expanded {
+        display: none;
+    }
+
+    .collapsed {
+        display: inline-block;
+    }
+}
+
+/* Logo Column CSS */
+
+.logo {
+    max-height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        max-height: 75px;
+        min-width: 75px;
+        min-height: 75px;
+        max-width: 75px;
+    }
+
+    .portal-title {
+        font-size: 22px
+    }
+
+    .portal-description {
+        font-size: 12px
+    }
+}
+/* End Logo Column CSS */
+
+/* Appointment Wizard CSS */
+
+.client_portal {
+    position: fixed;
+    height: 70%;
+    box-sizing: content-box;
+    border: none;
+    background-color: transparent;
+}
+
+.client_portal_btns {
+    margin: 10px;
+    width: 250px;
+    min-width: 250px;
+}
+
+.client_portal_options_container {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#appointment_type_options {
+    top: 0;
+    left: 0;
+}
+
+#boarding_appointment_time_options {
+    opacity: 0;
+    top: 0;
+    left: 550px;
+}
+
+#daycare_appointment_time_options {
+    opacity: 0;
+    top: 0;
+    left: 550px;
+}
+
+#grooming_appointment_time_options {
+    opacity: 0;
+    top: 0;
+    left: 550px;
+}
+
+#pet_selection_options {
+    opacity: 0;
+    top: 0;
+    left: 550px;
+}
+
+#grooming_service_selection_options {
+    opacity: 0;
+    top: 0;
+    left: 550px;
+}
+
+.available_date_time_options {
+    width: 100%;
+}
+
+.date-header {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.03) !important;
+    margin-bottom: 0 !important;
+}
+
+.date-container {
+    height: 100%;
+    width: 90%;
+}
+
+.angle-container {
+    width: 10%;
+    height: 100%;
+}
+
+.date-control {
+    background-color: gray;
+    border-radius: 50px;
+    width: 50px;
+}
+
+.closed {
+    background-color: #f87d7d !important;
+}
+
+.date-select {
+    color: black !important;
+    display: flex;
+    justify-content: start;
+}
+
+    .date-select:hover {
+        color: #0056b3 !important;
+    }
+
+.arrow_angle {
+    transform: rotate(90deg) scale(2);
+    transition: all 0.3s ease-in;
+}
+
+.rotate_angle {
+    transform: rotate(-90deg) scale(2);
+}
+
+.pet_selected {
+    background-color: #00d150;
+}
+
+.unchecked {
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.checked {
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+
+.toggle-handle {
+    border: #ccc 1px solid;
+    background-color: white;
+}
+
+.toggle-off {
+    background-color: #e6e6e6;
+    border: #adadad 1px solid;
+}
+
+.portal_component {
+    transition: all 0.6s ease-in;
+    width: 100%;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+    margin-bottom: 4rem;
+}
+
+.back-next-btn {
+    min-width: 80px;
+    min-height: 40px;
+    max-width: 80px;
+    max-height: 40px;
+}
+
+.new-apt-btn {
+    min-height: 30px;
+    max-height: 30px;
+    /* min-width: 150px;
+        max-width: 150px; */
+    line-height: 0px;
+}
+/* End Appointment Wizard CSS */
+
+/* End Landing Page CSS */
+
+/* Start Dashboard Page CSS */
+.dashboard-date {
+    font-size: 1.2rem;
+}
+
+.num-container {
+    min-width: 100px;
+}
+
+.status {
+    border-bottom: 2px solid #17a2b8;
+}
+
+.nav-link.active.status {
+    background-color: #fff !important;
+    color:#343a40 !important;
+}
+@media (max-width:768px) {
+    .dashboard-date {
+        font-size: 1rem;
+    }
+}
+
+.pet-breed {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.search_bar_container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:6px;
+}
+
+.search_bar {
+    width: 33%;
+    height: 35px;
+    min-height:35px;
+    margin: 0;
+    padding: 0 8px 0 8px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px 0 0 5px;
+    border: 1px rgb(211, 211, 211) solid;
+    border-right-width: 1px;
+    outline: none;
+}
+
+.search_bar:focus {
+    border-color: #002c8a;
+}
+
+.submit_button {
+    width: 15%;
+    height: 35px;
+    padding: 0;
+    border: 1px rgb(211, 211, 211) solid;
+    background-color: rgb(248, 248, 248);
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    border-left: none;
+}
+
+.submit_button:hover{
+    background-color: #d4d4d4;
+}
+.pet-tab-option {
+    font-size: 1.2rem;
+}
+@media (max-width: 540px) {
+    .pet-tab-option {
+        font-size: 1rem;
+    }
+}
+    /* Dashboard Tab  Menu CSS */
+    .pet-dash-tab-header {
+        padding: 0.25rem !important;
+    }
+    .pet-dash-tab-cell {
+        font-size: 14px !important;
+        height: 30px !important;
+        width: 50px !important;
+    }
+    .dropdown-menu.show.pet-action {
+        left: -60px !important;
+    }
+
+    .pet-dash-tab-header:first-child {
+        width: 7%;
+    }
+    .pet-dash-tab-cell:first-child {
+        width: 7%;
+    }
+
+    .pet-dash-tab-header:nth-child(2) {
+        /*width:21%;*/
+    }
+    .pet-dash-tab-cell:nth-child(2) {
+        /*width:21%;*/
+        height: 50px;
+        line-height: 30px !important;
+    }
+
+    .pet-dash-tab-header:nth-child(3) {
+        width:10%;
+    }
+    .pet-dash-tab-cell:nth-child(3) {
+        width:10%;
+    }
+    .pet-dash-tab-header:nth-child(5) {
+        width:10%;
+    }
+    .pet-dash-tab-cell:nth-child(5) {
+        width:10%;
+    }
+    .pet-dash-tab-header:nth-child(6) {
+        width:7%;
+    }
+    .pet-dash-tab-cell:nth-child(6) {
+        width:7%;
+    }
+
+    .in-out-date-time-info::after {
+        content: " ";
+    }
+    .pet-dropdown::after {
+        display: none;
+    }
+    .pet-breed {
+        display: inline-block;
+    }
+    .pet-breed::before {
+        content: "\2000";
+    }
+
+.shadowed-box-around {
+    -webkit-box-shadow: -1px 1px 3px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 1px 3px 3px rgba(0,0,0,0.15);
+    box-shadow: -1px 1px 5px 3px rgba(0,0,0,0.15);
+}
+    /* End Dashboard Tab Menu CSS */
+
+/* End Dashboard Page CSS */
+
+/* Customer Current Day Background Color Test */
+.fc-unthemed .fc-timeGridDay-view td.fc-today {
+    background-color: #fff !important;
+}
+/* End Customer Current Day Background Color Test */
+
+/*Tooltips*/
+.tooltipnew {
+    position: relative;
+    display: inline-block;
+    line-height:16px;
+    /*border-bottom: 1px dotted black;*/
+}
+    .tooltipnew .tooltiptext {
+        visibility: hidden;
+        width: 240px;
+        line-height: 16px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        margin-left: -120px;
+        margin-top: 30px;
+        left: unset;
+        position: fixed;
+        right: unset;
+        top: unset;
+        z-index: 1;
+    }
+
+    .tooltipnew .tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+    }
+
+.tooltipnew:hover .tooltiptext {
+    visibility: visible;
+}
+/*End Tooltips*/
+
+/* Text Presentation CSS */
+.text-presentation {
+    display: inline !important;
+}
+
+.text-presentation-none {
+    display: none !important;
+}
+
+/* Bootstrap Small Viewport Breakpoint */
+@media (min-width: 576px) {
+    .sm-text-presentation-none {
+        display: none !important;
+    }
+
+    .sm-text-presentation {
+        display: inline !important;
+    }
+}
+
+/* Bootstrap Medium Viewport Breakpoint */
+@media (min-width: 768px) {
+    .md-text-presentation-none {
+        display: none !important;
+    }
+
+    .md-text-presentation {
+        display: inline !important;
+    }
+}
+
+/* Bootstrap Large Viewport Breakpoint */
+@media (min-width: 992px) {
+    .lg-text-presentation-none {
+        display: none !important;
+    }
+
+    .lg-text-presentation {
+        display: inline !important;
+    }
+}
+
+/* Bootstrap Extra Large Viewport Breakpoint */
+@media (min-width: 1200px) {
+    .xl-text-presentation-none {
+        display: none !important;
+    }
+
+    .xl-text-presentation {
+        display: inline !important;
+    }
+}
+
+/* End Text Presentation CSS*/
+
+/* Appointment Header CSS */
+.card-body .appointment-header-card {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    /*background-color: rgb(230, 239, 251) !important;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.thin-navbar {
+    padding-left: .55rem !important;
+    padding-right: .55rem !important;
+}
+
+.testing-appointment-header-text {
+    font-size: 18px;
+    line-height: 28px;
+    height: 30px;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+}
+
+.appointment-header-text {
+    font-size: 18px;
+    line-height: 28px;
+    height: 30px;
+    white-space: nowrap;
+    width: 85%;
+    overflow: hidden;
+}
+@media (max-width: 1230px) {
+    .appointment-header-text {
+        width: 80%;
+    }
+}
+@media (max-width: 1120px) {
+    .appointment-header-text {
+        width: 75%;
+    }
+}
+@media (max-width: 855px) {
+    .appointment-header-text {
+        width: 70%;
+    }
+}
+@media (max-width: 870px) {
+    .appointment-header-text {
+        width: 65%;
+    }
+}
+@media (max-width: 580px) {
+    .appointment-header-text {
+        width: 60%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    .appointment-header-text {
+        width: 50%;
+    }
+}
+@media (max-width: 330px) {
+    .appointment-header-text {
+        width: 45%;
+    }
+}
+
+.testing-btn-appointment-header {
+    padding: 0 .5rem !important;
+    width: 65px;
+    margin: 2px auto;
+    height: 30px;
+    line-height: 23px;
+}
+
+.btn-appointment-header {
+    padding: 0 .5rem !important;
+    width: 65px;
+    margin: 2px auto;
+    height: 25px;
+    line-height: 23px;
+}
+/* End Appointment Header CSS */
+
+/* Soon to replace text transformation */
+.xs-text-show {
+    display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+    .xs-text-show {
+        display: inline !important;
+    }
+}
+
+.sm-text-show {
+    display: none !important;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .sm-text-show {
+        display: inline !important;
+    }
+}
+
+.md-text-show {
+    display: none !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .md-text-show {
+        display: inline !important;
+    }
+}
+
+.lg-text-show {
+    display: none !important;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .lg-text-show {
+        display: inline !important;
+    }
+}
+
+.xl-text-show {
+    display: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .xl-text-show {
+        display: inline !important;
+    }
+}
+/* End */
+.highlight-date {
+    background-color: gray !important;
+    color: #ffffff !important;
+}
+
+/* Data Table CSS */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.data-header {
+    padding: 0.25rem !important;
+    text-align:center;
+    min-width: 100px;
+    white-space: nowrap;
+}
+/* End Data Table CSS */
