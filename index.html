@@ -13,13 +13,13 @@
   </head>
   <body class="d-flex justify-content-center">
     <div class="table-wrapper">
-        <table class="table">
+        <table class="table data-table">
           <thead>
             <tr>
                 <th class="data-header">Actions</th>
                 <th class="data-header">In Time</th>
                 <th class="data-header">Pet (Breed)</th>
-                <th class="data-header">Details</th>
+                <th class="data-header" style="min-width: 110px">Details</th>
                 <th class="data-header">Out Time</th>
                 <th class="data-header">Alert</th>
                 <th class="data-header">Type (Gender)</th>
@@ -33,48 +33,186 @@
           </thead>
           <tbody>
             <tr>
-                <td><i class="fas fa-ellipsis-h"></i></td>
-                <td>9:30 AM</td>
-                <td>Bowser (Beagles)</td>
-                <td>Bath (Mike), Groom (Harris), Nails(Others)</td>
-                <td>10:30 AM</td>
-                <td><i class="fas fa-exclamation-triangle"></i><i class="fas fa-user"></i></td>
+                <td>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle text-dark pet-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu pet-action" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Check In</a>
+                        <a class="dropdown-item" href="/#/pets/details/@app.PetId">View Pet</a>
+                        <a class="dropdown-item" href="/#/clients/details/@app.ClientId">View Client</a>
+                        <a class="dropdown-item" href="@appointmentlink">View/Modify</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                    <span class="in-date in-out-date-time-info">9:30PM</span>
+                </td>
+                <td>
+                    <span class="pet-name">Bowser</span>
+                    <span class="pet-breed">(Beagles)</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    Bath,<span class="tooltiptext position-absolute">Mike</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Groom,<span class="tooltiptext position-absolute">Harris</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Nails,<span class="tooltiptext position-absolute">Admin</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Others
+                  </span>
+                <td>
+                  <span class="in-date in-out-date-time-info">10:30PM</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fa fa-user-alt" style="color:red;  font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">Bites</span>
+                  </span>
+                </td>
                 <td>Dog (<i class="fas fa-mars"></i>)</td>
                 <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
                 <td>#1985</td>
                 <td>Training 1</td>
-                <td>1843 Lowell Rd.</td>
-                <td>(123) 456-7890</td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fas fa-address-card" style="font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">1843 Lowell Rd.</span>
+                  </span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fas fa-mobile-alt" style="font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">(123)456-7890</span>
+                  </span>
+                </td>
                 <td>Trivela</td>
             </tr>
             <tr>
-                <td><i class="fas fa-ellipsis-h"></i></td>
-                <td>9:30 AM</td>
-                <td>Bowser (Beagles)</td>
-                <td>Bath (Mike), Groom (Harris), Nails(Others)</td>
-                <td>10:30 AM</td>
-                <td><i class="fas fa-exclamation-triangle"></i><i class="fas fa-user"></i></td>
+                <td>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle text-dark pet-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu pet-action" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Check In</a>
+                        <a class="dropdown-item" href="/#/pets/details/@app.PetId">View Pet</a>
+                        <a class="dropdown-item" href="/#/clients/details/@app.ClientId">View Client</a>
+                        <a class="dropdown-item" href="@appointmentlink">View/Modify</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                    <span class="in-date in-out-date-time-info">9:30PM</span>
+                </td>
+                <td>
+                    <span class="pet-name">Bowser</span>
+                    <span class="pet-breed">(Beagles)</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    Bath,<span class="tooltiptext position-absolute">Mike</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Groom,<span class="tooltiptext position-absolute">Harris</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Nails,<span class="tooltiptext position-absolute">Admin</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Others
+                  </span>
+                <td>
+                  <span class="in-date in-out-date-time-info">10:30PM</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fa fa-user-alt" style="color:red;  font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">Bites</span>
+                  </span>
+                </td>
                 <td>Dog (<i class="fas fa-mars"></i>)</td>
                 <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
                 <td>#1985</td>
                 <td>Training 1</td>
-                <td>1843 Lowell Rd.</td>
-                <td>(123) 456-7890</td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fas fa-address-card" style="font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">1843 Lowell Rd.</span>
+                  </span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fas fa-mobile-alt" style="font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">(123)456-7890</span>
+                  </span>
+                </td>
                 <td>Trivela</td>
             </tr>
             <tr>
-                <td><i class="fas fa-ellipsis-h"></i></td>
-                <td>9:30 AM</td>
-                <td>Bowser (Beagles)</td>
-                <td>Bath (Mike), Groom (Harris), Nails(Others)</td>
-                <td>10:30 AM</td>
-                <td><i class="fas fa-exclamation-triangle"></i><i class="fas fa-user"></i></td>
+                <td>
+                  <div class="dropdown">
+                    <a class="dropdown-toggle text-dark pet-dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                    <div class="dropdown-menu pet-action" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Check In</a>
+                        <a class="dropdown-item" href="/#/pets/details/@app.PetId">View Pet</a>
+                        <a class="dropdown-item" href="/#/clients/details/@app.ClientId">View Client</a>
+                        <a class="dropdown-item" href="@appointmentlink">View/Modify</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                    <span class="in-date in-out-date-time-info">9:30PM</span>
+                </td>
+                <td>
+                    <span class="pet-name">Bowser</span>
+                    <span class="pet-breed">(Beagles)</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    Bath,<span class="tooltiptext position-absolute">Mike</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Groom,<span class="tooltiptext position-absolute">Harris</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Nails,<span class="tooltiptext position-absolute">Admin</span>
+                  </span>
+                  <span class="tooltipnew">
+                    Others
+                  </span>
+                <td>
+                  <span class="in-date in-out-date-time-info">10:30PM</span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fa fa-user-alt" style="color:red;  font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">Bites</span>
+                  </span>
+                </td>
                 <td>Dog (<i class="fas fa-mars"></i>)</td>
                 <td><input type="checkbox" aria-label="Checkbox for following text input"></td>
                 <td>#1985</td>
                 <td>Training 1</td>
-                <td>1843 Lowell Rd.</td>
-                <td>(123) 456-7890</td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fas fa-address-card" style="font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">1843 Lowell Rd.</span>
+                  </span>
+                </td>
+                <td>
+                  <span class="tooltipnew">
+                    <i class="fas fa-mobile-alt" style="font-size:larger"></i>
+                    <span class="tooltiptext position-absolute">(123)456-7890</span>
+                  </span>
+                </td>
                 <td>Trivela</td>
             </tr>
           </tbody>

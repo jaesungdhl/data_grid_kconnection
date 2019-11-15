@@ -1622,7 +1622,11 @@ legend {
 .data-header {
     padding: 0.25rem !important;
     text-align:center;
-    min-width: 100px;
+    min-width: 80px;
     white-space: nowrap;
 }
+
+.data-table {
+    border-spacing: 5px;
+  }
 /* End Data Table CSS */
